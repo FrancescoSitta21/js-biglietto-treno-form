@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>biglitto-treno-from</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="container">
+      <!-- inizio pagina -->
+      <section id="Utente">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO!</h1>
+        <div class="dati">
+          <label>Nome Cognome</label><br>
+          <input type="text" name="nomecognome"><br>
+          <label>Km da percorrere</label><br>
+          <input type="number" name="chilometri"><br>
+          <label>Fascia d'età</label><br>
+          <select class="sconto">
+            <option value="Minorenne">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over 65">Over 65</option>
+          </select>
+        </div>
+        <div class="bottoni">
+          <button type="button" name="button">Genera</button>
+          <button type="button" name="button">Annulla</button>
+        </div>
+      </section>
+      <!-- fine pagina -->
+
+      <!-- inizo biglietto -->
+      <section>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="datiutente">
+          <h3>DETTAGLI PASSEGGERO</h3>
+          <div class="dettagli">
+            <div class="dettagligrigi">
+              <div id="heading">Nome Passeggero</div>
+              <div id="nomepasseggero">&nbsp;</div>
+            </div>
+
+            <div class="dettaglibiglietto">
+              <div id="headingDue">OFFERTA</div>
+              <div id="offerta">&nbsp;</div>
+            </div>
+            <div class="dettaglibiglietto">
+              <div id="headingDue">CARROZZA CP</div>
+              <div id="carrozza">&nbsp;</div>
+            </div>
+            <div class="dettaglibiglietto">
+              <div id="headingDue">CODICE CP</div>
+              <div id="numerocarrozza">&nbsp;</div>
+            </div>
+            <div class="dettaglibiglietto">
+              <div id="headingDue">COSTO TOTALE</div>
+              <div id="costotot">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fine bigietto -->
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
